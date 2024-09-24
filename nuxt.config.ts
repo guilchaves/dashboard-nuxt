@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     host: '127.0.0.1'
   },
 
-  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt', 'nuxt-icon'],
 
   shadcn: {
     /**
