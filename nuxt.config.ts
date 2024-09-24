@@ -1,5 +1,11 @@
 export default defineNuxtConfig({
+  devServer: {
+    port: 4000,
+    host: '127.0.0.1'
+  },
+
   modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -10,5 +16,7 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
-  }
+  },
+
+  compatibilityDate: '2024-09-24'
 })
