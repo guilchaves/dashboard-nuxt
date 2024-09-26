@@ -22,6 +22,35 @@ const list = [
   },
 ];
 
+const cards = [
+  {
+    title: "Sales",
+    progression: 12,
+    amount: 1244.43,
+    label: "View sales",
+    description: "Sales of March 2025",
+    icon: "solar:ticket-sale-outline",
+  },
+  {
+    title: "Refunds",
+    progression: 8,
+    amount: 84.44,
+    label: "View refunds",
+    description: "Refunds since beginning of year",
+    icon: "heroicons-outline:receipt-refund",
+  },
+  {
+    title: "Payouts",
+    progression: 14,
+    amount: 899.99,
+    label: "View payouts",
+    description: "Payouts of this week",
+    icon: "tabler:zoom-money",
+  },
+];
+
+
+
 let currentCategory = ref("today");
 
 function generateRandomValue(number = 7) {
@@ -93,12 +122,12 @@ onMounted(() => {
       </Tabs>
     </main>
     <footer>
-      <div class="flex items-center gap-4">
-        <div
-          v-for="(item, index) in 3"
+      <div class="grid lg:grid-cols-3 gap-4">
+        <Card
+          v-for="(item, index) in cards"
           :key="index"
-          class="w-full bg-neutral-200 h-[260px]"
-        ></div>
+          :card="item"
+        ></Card>
       </div>
     </footer>
   </div>
