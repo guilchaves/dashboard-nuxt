@@ -32,7 +32,7 @@ const open = ref(true);
     >
       <SidebarMenu />
       <div>
-        <p>UserItem</p>
+        <UserItem />
       </div>
     </div>
   </div>

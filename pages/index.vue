@@ -99,7 +99,7 @@ onMounted(() => {
         <p>Hi, welcome back Guilherme!</p>
         <h1>Dashboard</h1>
       </div>
-      <div class="w-[120px] bg-neutral-200 h-[36px]"></div>
+      <ProductNew />
     </header>
     <main class="grid gap-4">
       <Tabs default-value="Today" @click="setCategory">
